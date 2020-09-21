@@ -4,3 +4,16 @@
 #about{
     font-family: 'Times New Roman', Times, serif;
 }
+#catPic{
+    width:160px;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+.myBackground{
+    background-image: url("../Images/bg2.jpg");
+    
+}
+footer{
+    border-width:5px !important;
+    border-top:10px solid red;
+}
