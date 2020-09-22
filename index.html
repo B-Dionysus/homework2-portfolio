@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
     <!-- Huh. The footer only truly works if this h-100 class is set on <HTML>?!? -->
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
         <a id="navBarTitle" class="navbar-brand text-light p-1 bg-info font-weight-bold" href="#">Benjamin Dionysus</a>    
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="topNavBar">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
             <a class="nav-link" href="./contact.html">Contact</a>
@@ -55,10 +55,8 @@
             </div>
         </div>
     </div>
-<!-- For some reason, the footer is hanging out a bit above the bottom, but only in large mode -->
-    <footer class="footer mt-auto py-3 bg-dark border-info p-4 text-center text-muted">
+    <footer class="page-footer fixed-bottom border-info bg-dark text-muted p-4 text-center">
         &#169; Copyright
     </footer>
-
 </body>
 </html>
