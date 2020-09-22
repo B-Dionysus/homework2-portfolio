@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
-    <!-- Huh. The footer only truly works if this h-100 class is set on <HTML>?!? -->
+ <html lang="en" > 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,15 +20,15 @@
         <a id="navBarTitle" class="navbar-brand text-light p-1 bg-info font-weight-bold" href="#">Benjamin Dionysus</a>    
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="topNavBar">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-            <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+            <a class="nav-link active" href="#">Contact <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item ">
             <a class="nav-link" href="./index.html">About</a>
             </li>
             
@@ -43,11 +42,11 @@
                     <h2 id="about" class="card-title text-info font-weight-bold border-secondary border-bottom p-2">Contact</h2>
                     <div class="row">
                         <div class="form-group col-10">
-                            <label>Name</label>
+                            <label class="text-dark mt-2">Name</label>
                             <input type="text" id="name" class="form-control"  placeholder="Name">
-                            <label>Email</label>
+                            <label class="text-dark mt-2">Email</label>
                             <input type="email" id="email" class="form-control" placeholder="Email">
-                            <label>Message</label>
+                            <label class="text-dark mt-2 mb">Message</label>
                             <textarea type="message" id="message" rows="3" class="form-control" placeholder="Message"></textarea>
                         </div>
                         <div class="col-2">
@@ -55,18 +54,19 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
-                            <button type="submit" class="btn btn-primary mb-2"></button>
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                        </div>
+                        <div class="col-8">
+                            <!-- This space intentionally left blank -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<!-- For some reason, the footer is hanging out a bit above the bottom, but only in large mode -->
-    <footer class="footer mt-auto py-3 bg-dark border-info p-4 text-center text-muted">
+    <footer class="page-footer fixed-bottom border-info bg-dark text-muted p-4 text-center">
         &#169; Copyright
     </footer>
-
 </body>
 </html>
