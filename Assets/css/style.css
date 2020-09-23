@@ -16,3 +16,13 @@
 footer{
     border-top:5px solid black;
 }
+
+
+/* README.md said to minimize @media queries, and only specified width for xs,
+    so I'll just use the bootstrap classes instead of writing my own  */
+/* @media only screen and (max-width: 400px) {
+
+    #mainContent{
+        width:100%;
+    }
+  } */

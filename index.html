@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Huh. The footer only truly works if this h-100 class is set on <HTML>?!? -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +15,7 @@
     <!-- Custom css -->
     <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
-<body class="d-flex flex-column h-100 myBackground ">
+<body class="d-flex flex-column myBackground ">
     <navbar class="navbar navbar-expand-md navbar-light bg-light">
         <a id="navBarTitle" class="navbar-brand text-light p-1 bg-info font-weight-bold" href="#">Benjamin Dionysus</a>    
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,23 +35,25 @@
             </ul>
         </div>
     </navbar>
-    <div class="container mb-4">
-        <div class="row mt-5 ml-2 ">
-            <div class="card col-8">
-                <div class="card-body ">
-                <h2 id="about" class="card-title text-info font-weight-bold border-secondary border-bottom p-2">About My Cat</h2>
-                <div class="row">
-                    <div class="col">
-                        <div class="float-left">
-                          <img id="catPic" src="./Assets/Images/wh.jpg" alt="My cat, Wh">
-                        </div>
-                        <p class="card-text">This is my cat, one of two. Her name is Wh, and she is weird and bitchy, but I love her. She loves me, and being given food, and licking things. She tolerates my wife, and the other cat (unless the other cat wants to play, in which case she looses her mind with incandescant fury).</p>
-                        <p class="card-text">She is 16-and-a-half-years old, which is old enough to be allowed certain eccentricities. She is old enough now that her jet black coat is dusted with patches of white, and I can no longer remember why I named her "Wh".</p>
-                        <p class="card-text">A couple of years ago one of her whiskers, previously as black as her fur, grew in white, instead. Last year, another one followed suite.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container-fluid">
+        <div class="row-12 mb-4">
+        <div class="col-sm-8 ml-sm-auto mr-sm-auto mt-5 col-xs-12 m-xs-0">
+        <div class="card ">
+        <div class="card-body ">
+        <h2 id="about" class="card-title text-info font-weight-bold border-secondary border-bottom p-2">About My Cat</h2>
+        <div class="">
+        <div class="">
+        <div class="float-left">
+        <img id="catPic" src="./Assets/Images/wh.jpg" alt="My cat, Wh">
+        </div>
+        <p class="card-text">This is my cat, one of two. Her name is Wh, and she is weird and bitchy, but I love her. She loves me, and being given food, and licking things. She tolerates my wife, and the other cat (unless the other cat wants to play, in which case she looses her mind with incandescant fury).</p>
+        <p class="card-text">She is 16-and-a-half-years old, which is old enough to be allowed certain eccentricities. She is old enough now that her jet black coat is dusted with patches of white, and I can no longer remember why I named her "Wh".</p>
+        <p class="card-text">A couple of years ago one of her whiskers, previously as black as her fur, grew in white, instead. Last year, another one followed suite.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
         </div>
     </div>
     <footer class="page-footer fixed-bottom border-info bg-dark text-muted p-4 text-center">
