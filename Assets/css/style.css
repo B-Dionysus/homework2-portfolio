@@ -1,7 +1,7 @@
 #navBarTitle{
     font-family: 'Times New Roman', Times, serif;
 }
-#about{
+.headers-BD{
     font-family: 'Times New Roman', Times, serif;
 }
 #catPic{
@@ -9,7 +9,7 @@
     margin-right:10px;
     margin-bottom:10px;
 }
-.myBackground{
+.background-BD{
     background-image: url("../Images/bg2.jpg");
     
 }
