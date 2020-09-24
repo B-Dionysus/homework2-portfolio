@@ -13,16 +13,49 @@
     background-image: url("../Images/bg2.jpg");
     
 }
+.galleryThumbnail-BD{
+    /* Photos might be of any size, and may not necessarily be square
+    Setting a specific width and height ensures that they will be automatically
+    cropped to 350x350, as specified in design screenshot 
+    
+    This was influenced by the discussion here:
+    https://stackoverflow.com/questions/42680085/how-do-i-make-images-display-as-a-square
+    */
+    overflow:hidden;
+    width:350px;
+    height:350px;
+} 
+.galleryThumbnail-BD img{
+    width:100%;
+}
+.galleryThumbnail-BD img.landscape{
+    padding-top:10%;
+}
+
 footer{
     border-top:5px solid black;
 }
 
 
 /* README.md said to minimize @media queries, and only specified width for xs,
-    so I'll just use the bootstrap classes instead of writing my own  */
-/* @media only screen and (max-width: 400px) {
+    so I've tried to just use the bootstrap classes instead of writing my own  
+    However, I'm explicitly setting the height and width of the portfolio gallery images
+    so I'll need to update that here.*/
+    
+@media only screen and (max-width: 400px) {
 
-    #mainContent{
-        width:100%;
+    .galleryThumbnail-BD{
+        overflow:hidden;
+        width:250px;
+        height:250px;
+    } 
     }
-  } */
+@media only screen and (max-width: 768px) {
+
+    .galleryThumbnail-BD{
+        overflow:hidden;
+        width:125px;
+        height:125px;
+    } 
+
+}

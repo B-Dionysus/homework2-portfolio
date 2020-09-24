@@ -14,19 +14,21 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <!-- Custom css -->
     <link rel="stylesheet" href="./Assets/css/style.css">
+    <script src="./Assets/js/script.js"></script>
 </head>
 <body class="d-flex flex-column h-100 background-BD ">
-    <navbar class="navbar navbar-expand-md navbar-light bg-light">
+    
+    <navbar class="navbar navbar-expand-lg navbar-light bg-light">
         <a id="navBarTitle" class="navbar-brand text-light p-1 bg-info font-weight-bold" href="#">Benjamin Dionysus</a>    
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-            <a class="nav-link active" href="./contact.html">Contact <span class="sr-only">(current)</span></a>
+            <a class="nav-link " href="./contact.html">Contact </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link active" href="#">Portfolio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item ">
             <a class="nav-link" href="./index.html">About</a>
@@ -35,22 +37,76 @@
             </ul>
         </div>
     </navbar>
+<!-- Great write-up on how to use non-buttons to launch modals here:
+https://stackoverflow.com/questions/30820585/bootstrap-modal-clickable-div 
 
-    <div class="container-fluid">
-        <div class="row-12 mb-4">
-            <div class="col-sm-8 ml-sm-auto mr-sm-auto mt-5 col-xs-12 m-xs-0">
+-->
+    <div class="container-fluid mb-4">
+        <div class="row-12">
+            <div class="col-sm-6 ml-sm-auto mr-sm-auto mt-5 col-xs-12 m-xs-0 p-1">
                 <div class="card ">
                     <div class="card-body ">
-                        <h2 id="portfolio" class="card-title text-info font-weight-bold border-secondary border-bottom p-2 headers-BD">Portfolio</h2>
-                        <div class="row">
-
+                        <h2 id="portfolio" class="card-title text-info font-weight-bold border-secondary border-bottom p-2 headers-BD">This is what my cat is like</h2>
+                        <div class="row ">
+                            <div class="col-xl-6 mb-3">                                
+                                <div class=" m-auto  galleryThumbnail-BD" data-toggle="modal" data-target="#modalImageDisplay" onClick="launchModal('wh7.jpg')">
+                                     <!-- Wrapper to ensure that the images are 350x350 -->
+                                     <img class="" src="./Assets/Images/wh7.jpg" alt="Wh on a pillow."> 
+                                <!-- <img src="https://via.placeholder.com/350" alt=""> -->
+                                </div>
+                            </div>
+                            <div class=" m-auto  galleryThumbnail-BD" data-toggle="modal" data-target="#modalImageDisplay" onClick="launchModal('wh5.jpg')">                            
+                                    <img class="" src="./Assets/Images/wh5.jpg" alt="Wh Stretching."> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-xl-6 mb-3">                                
+                                <div class=" m-auto  galleryThumbnail-BD" data-toggle="modal" data-target="#modalImageDisplay" onClick="launchModal('wh4.jpg')">
+                                     <!-- Wrapper to ensure that the images are 350x350 -->
+                                <img class="" src="./Assets/Images/wh4.jpg" alt="A closeup of Wh's little face.">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 mb-3">
+                                <div class=" m-auto  galleryThumbnail-BD" data-toggle="modal" data-target="#modalImageDisplay" onClick="launchModal('wh3.jpg')">
+                                    <img class="landscape" src="./Assets/Images/wh3.jpg" alt="Wh sitting on my wife's lap on the back balcony."> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-xl-6 mb-3">                                
+                                <div class=" m-auto  galleryThumbnail-BD" data-toggle="modal" data-target="#modalImageDisplay" onClick="launchModal('wh2.jpg')">
+                                    <img class="" src="./Assets/Images/wh2.jpg" alt="My cat, Wh, sprawled on a blue fabric background.">             
+                                </div>
+                            </div>
+                            <div class="col-xl-6 mb-3">
+                                <div class=" m-auto  galleryThumbnail-BD" data-toggle="modal" data-target="#modalImageDisplay" onClick="launchModal('wh6.jpg')">
+                                    <img class="" src="./Assets/Images/wh6.jpg" alt="Wh sleeping."> 
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="page-footer fixed-bottom border-info bg-dark text-muted p-4 text-center">
+
+
+<!-- I can't figure out how to make this larger—ideally it should take up the full screen width -->
+    <div class="modal fade " id="modalImageDisplay" tabindex="-1" role="dialog" aria-labelledby="modalImageDisplay" aria-hidden="true">
+        <div class="modal-dialog " role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                <span data-dismiss="modal" aria-label="Close">
+                    <img class="img-fluid">
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <footer class="page-footer fixed-bottom border-info bg-dark text-muted p-4 text-center mt-5">
         &#169; Copyright
     </footer>
 </body>
