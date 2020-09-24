@@ -13,6 +13,10 @@
     background-image: url("../Images/bg2.jpg");
     
 }
+.scroll-BD{
+    overflow: scroll;
+    margin-bottom: 7rem;
+}
 .galleryThumbnail-BD{
     /* Photos might be of any size, and may not necessarily be square
     Setting a specific width and height ensures that they will be automatically
@@ -41,26 +45,16 @@ footer{
     so I've tried to just use the bootstrap classes instead of writing my own  
     However, I'm explicitly setting the height and width of the portfolio gallery images
     so I'll need to update that here.*/
-
-@media only screen and (max-width: 400px) {
-
-    .galleryThumbnail-BD{
-        overflow:hidden;
-        width:125px;
-        height:125px;
-    } 
-
-}
-
+ 
 @media only screen and (max-width: 575px) {
 
     .galleryThumbnail-BD{
         overflow:hidden;
-        width:350px;
-        height:350px;
+        width:300px;
+        height:300px;
     } 
 
-}
+} 
 
 
 @media only screen and (min-width: 768px) {
@@ -69,6 +63,15 @@ footer{
         overflow:hidden;
         width:125px;
         height:125px;
+    } 
+
+}
+@media only screen and (min-width: 1024px) {
+
+    .galleryThumbnail-BD{
+        overflow:hidden;
+        width:250px;
+        height:250px;
     } 
 
 }
