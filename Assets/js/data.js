@@ -50,10 +50,10 @@ function getData(){
             "path":"./Assets/Images/"
         },
         {
-            "name":"The Weather",
-            "url":"https://b-dionysus.github.io/homework6-Weather/",
-            "git":"https://github.com/B-Dionysus/homework6-Weather",
-            "thumb":"hw6.PNG",
+            "name":"House Cup",
+            "url":"https://b-dionysus.github.io/bootcamp-HouseCup/",
+            "git":"https://github.com/B-Dionysus/bootcamp-HouseCup",
+            "thumb":"houseCup.PNG",
             "path":"./Assets/Images/"
         },
     ];
