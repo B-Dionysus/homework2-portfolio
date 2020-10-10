@@ -5,6 +5,9 @@
 # Updates as of 10/10/2020
 * I updated the portfolio page to dynamically generate the thumbnails based on a list of projects
 * Clicking on a screenshot thumbnail still brings up the full size photo, but now it also includes the project name and a link to both the git repo and live url for the project.
+* The data is all in an object in a data.js file, so it's all set up to switch over to JSON, which would be very handy!
+
+
 
 Three page site with an about page, a contact page, and a portflio page displaying responsive images. All pages should be responive.
 
