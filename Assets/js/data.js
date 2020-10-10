@@ -53,7 +53,7 @@ function getData(){
             "name":"House Cup",
             "url":"https://b-dionysus.github.io/bootcamp-HouseCup/",
             "git":"https://github.com/B-Dionysus/bootcamp-HouseCup",
-            "thumb":"houseCup.PNG",
+            "thumb":"houseCup.png",
             "path":"./Assets/Images/"
         },
     ];
