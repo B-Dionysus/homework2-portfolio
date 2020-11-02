@@ -8,6 +8,13 @@ function getData(){
             "path":"./Assets/Images/"
         },
         {
+            "name":"Burgers",
+            "url":"https://still-garden-84796.herokuapp.com/",
+            "git":"https://github.com/B-Dionysus/homework11-Burgers",
+            "thumb":"burgers.PNG",
+            "path":"./Assets/Images/"
+        },
+        {
             "name":"Prework",
             "url":"https://b-dionysus.github.io/prework-about-me/",
             "git":"https://github.com/B-Dionysus/prework-about-me",
